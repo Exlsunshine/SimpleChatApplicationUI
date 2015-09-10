@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/listview1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.93"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="#0000"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        android:stackFromBottom="true" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/appkefu_bottom_inputbar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/appkefu_bottombar_bg"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/voiceButton"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/appkefu_inputbar_voicebtn" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/addButton"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/appkefu_inputbar_plus" />
+
+                <TextView
+                    android:id="@+id/backtext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@id/addButton"
+                    android:background="@drawable/ss"
+                    android:textColorHint="#C0C0C0" />
+
+                <Button
+                    android:id="@+id/emotionbtnButton"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_toLeftOf="@id/addButton"
+                    android:background="@drawable/appkefu_inputbar_emotionbtn" />
+
+                <EditText
+                    android:id="@+id/et_search"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@id/emotionbtnButton"
+                    android:background="@drawable/ss" />
+
+                <Button
+                    android:id="@+id/recordvoicebtn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toLeftOf="@id/addButton"
+                    android:background="@drawable/appkefu_inputbar_recordvoicebtn"
+                    android:text="按住  说话"
+                    android:textSize="14dp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/send"
+                    android:layout_width="55dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@id/backtext"
+                    android:background="@drawable/aa"
+                    android:text="发送"
+                    android:textSize="14dp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

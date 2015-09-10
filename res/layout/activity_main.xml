@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F8F8FF" >
+
+    <com.example.scrollertext.FinalListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:divider="#DCDCDC"
+        android:dividerHeight="2px" >
+    </com.example.scrollertext.FinalListView>
+
+</LinearLayout>
+<!--
+      <com.example.scrollertext.FinalListView
+        android:id="@+id/listview"  
+    	android:layout_width="fill_parent"  
+        android:layout_height="match_parent"   
+        android:divider="#DCDCDC"  
+        android:dividerHeight="2px" >  
+    </com.example.scrollertext.FinalListView>-->
